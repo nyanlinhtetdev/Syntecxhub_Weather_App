@@ -14,10 +14,10 @@ interface RecentSearchesResult {
 function Homepage() {
 
     const [searchesResponse, setSearchesResponse] = useState<RecentSearchesResult[]>([]);
-    const [recentSearches, setRecentSearches] = useState<Location[]>(() => {         
+    const recentSearches: Location[] = (() => {
         const saved = localStorage.getItem("recentSearches");
         return saved ? JSON.parse(saved) : [];
-    });
+    })();
     const [isLoading, setIsLoading] = useState(true);
     const [hasError, setHasError] = useState(false);
 
