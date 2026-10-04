@@ -1,0 +1,13 @@
+.status-page {
+    padding: 72px 20px;
+    text-align: center;
+}
+
+.status-page h1 {
+    margin: 0 0 10px;
+}
+
+.status-page a {
+    color: #8bd5ff;
+    font-weight: 650;
+}
